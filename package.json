@@ -1,0 +1,28 @@
+{
+  "name": "rafq",
+  "version": "0.0.1",
+  "description": "Enqueue operations to be called in the next frame using requestAnimationFrame.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobbuck/rafq.git"
+  },
+  "keywords": [
+    "animation",
+    "animations",
+    "batch",
+    "enqueue",
+    "queue",
+    "raf",
+    "requestAnimationFrame"
+  ],
+  "author": "Jacob Buck <buck.jacob@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacobbuck/rafq/issues"
+  },
+  "homepage": "https://github.com/jacobbuck/rafq#readme"
+}
