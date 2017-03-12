@@ -7,7 +7,7 @@ module.exports = function rafq() {
 	function tick(time) {
 		var prevQueue = queue;
 		queue = [];
-		prevQueue.forEach(function (value) {
+		prevQueue.forEach(function(value) {
 			value(time);
 		});
 	}
@@ -29,7 +29,7 @@ module.exports = function rafq() {
 		},
 
 		remove: function(callback) {
-			queue = queue.filter(function (value) {
+			queue = queue.filter(function(value) {
 				return value !== callback;
 			});
 			if (!queue.length) {
