@@ -12,21 +12,21 @@ module.exports = function rafq() {
 		});
 	}
 
-	var proto = {
+	return {
 		add: function(callback) {
 			var prevQueue = queue;
 			queue = queue.concat([callback]);
 			if (!prevQueue.length) {
 				raf = requestAnimationFrame(tick);
 			}
-			return proto;
-		}
+			return this;
+		},
 
 		clear: function() {
 			queue = [];
 			cancelAnimationFrame(raf);
-			return proto;
-		}
+			return this;
+		},
 
 		remove: function(callback) {
 			queue = queue.filter(function (value) {
@@ -35,9 +35,7 @@ module.exports = function rafq() {
 			if (!queue.length) {
 				cancelAnimationFrame(raf);
 			}
-			return proto;
+			return this;
 		}
 	};
-
-	return proto;
 };

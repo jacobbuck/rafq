@@ -1,6 +1,6 @@
 {
   "name": "rafq",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Enqueue operations to be called in the next frame using requestAnimationFrame.",
   "main": "index.js",
   "scripts": {
